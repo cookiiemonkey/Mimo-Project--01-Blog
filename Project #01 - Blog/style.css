@@ -76,7 +76,7 @@ a:hover {
     margin: 0 auto;
     padding: 60px 0;
 }
-.post-author img {
+.post-author img{
     width: 50px;
     height: 50px;
     vertical-align: middle;
@@ -97,4 +97,36 @@ h1, h2, h3, h4 {
 p {
     line-height: 1.5;
 }
+.post-container:nth-child(even){
+    background-color: #f2f2f2;
+}
 /* END CONTENT */
+
+/* START ABOUT PAGE */
+.post, .about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.about-author img {
+    width: 250px;
+    height: 250px;
+}
+.container-a {
+    text-align: center;
+}
+
+/* END ABOUT PAGE */
+
+.post-author img,
+.about-author img{
+    border-radius: 50%
+}
+
+
+/* CLAERFIX */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
